@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-/* custom fonts */
-/* headers */
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap');
-
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #171717;
+    --foreground: #FDFDFD;
   }
 }
 
@@ -42,4 +37,10 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 1.5rem;
+}
+
+p {
+  font-family: var(--font-inter);
+  font-weight: 300; 
+  font-style: normal;
 }

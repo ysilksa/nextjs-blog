@@ -1,4 +1,4 @@
-import { Inria_Sans } from "next/font/google";
+import { Inria_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
 const inriaSans = Inria_Sans({
@@ -7,6 +7,13 @@ const inriaSans = Inria_Sans({
   weight: '700',
   variable: '--font-inria-sans',
 });
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '300',
+  variable: '--font-inter'
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -17,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inriaSans.variable} antialiased`}
+        className={`${inriaSans.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>

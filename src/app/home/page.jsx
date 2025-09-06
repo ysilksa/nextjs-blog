@@ -1,13 +1,13 @@
 import React from 'react';
 import NavBar from '@/components/NavBar';
-import PostPreview from '@/components/PostPreview';
+import PostPreviewHorizontal from '@/components/PostPreviewHorizontal';
 
 
 const HomePage = () => {
     return (
         <div>
             <div className="bg-[url('/pages/StefanKUnsplash.jpg')] bg-cover bg-center w-screen h-[70vh]">      
-                <NavBar darkMode={true}/>     
+                <NavBar header={false}/>     
             </div>
 
             <div className="flex flex-col mt-16 mb-16 ml-64 mr-64 gap-8">
@@ -19,28 +19,28 @@ const HomePage = () => {
 
                 {/* replace with ImageGallery later */}
                 <section className="flex flex-row gap-16">
-                    <PostPreview
+                    <PostPreviewHorizontal
                         imageLink='/pages/ChristineTanUnsplash.jpg'
                         date="2025 Aug 24"
                         title="New Eclairs"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...."
                     />
 
-                    <PostPreview
+                    <PostPreviewHorizontal
                         imageLink='/pages/ChristineTanUnsplash.jpg'
                         date="2025 Aug 24"
                         title="New Eclairs"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...."
                     />
 
-                    <PostPreview
+                    <PostPreviewHorizontal
                         imageLink='/pages/ChristineTanUnsplash.jpg'
                         date="2025 Aug 24"
                         title="New Eclairs"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...."
                     />
 
-                    <PostPreview
+                    <PostPreviewHorizontal
                         imageLink='/pages/ChristineTanUnsplash.jpg'
                         date="2025 Aug 24"
                         title="New Eclairs"
@@ -50,28 +50,28 @@ const HomePage = () => {
 
                 {/* replace with ImageGallery later */}
                 <section className="flex flex-row gap-16">
-                    <PostPreview
+                    <PostPreviewHorizontal
                         imageLink='/pages/ChristineTanUnsplash.jpg'
                         date="2025 Aug 24"
                         title="New Eclairs"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...."
                     />
 
-                    <PostPreview
+                    <PostPreviewHorizontal
                         imageLink='/pages/ChristineTanUnsplash.jpg'
                         date="2025 Aug 24"
                         title="New Eclairs"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...."
                     />
 
-                    <PostPreview
+                    <PostPreviewHorizontal
                         imageLink='/pages/ChristineTanUnsplash.jpg'
                         date="2025 Aug 24"
                         title="New Eclairs"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...."
                     />
 
-                    <PostPreview
+                    <PostPreviewHorizontal
                         imageLink='/pages/ChristineTanUnsplash.jpg'
                         date="2025 Aug 24"
                         title="New Eclairs"

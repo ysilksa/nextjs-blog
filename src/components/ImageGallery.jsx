@@ -1,5 +1,5 @@
 import React from 'react';
-import PostPreview from './PostPreview';
+import PostPreview from './PostPreviewHorizontal';
 
 const ImageGallery = ({ image1, image2, image3 }) => {
     return (

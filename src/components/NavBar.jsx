@@ -2,10 +2,10 @@ import React from 'react';
 import { IconButton, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
-const NavBar = ({ darkMode }) => {
+const NavBar = ({ header }) => {
     return (
-        <div className='flex flex-row justify-between p-8'>
-            <div className={`flex flex-row gap-16 p-2 ${darkMode ? 'text-white' : 'text-black'}`}> 
+        <div className={`flex flex-row justify-between p-8 ${header ? 'bg-[#BFBFB0]' : 'bg-transparent' }`}>
+            <div className={`flex flex-row gap-16 p-2 text-white`}> 
                 <h1>DessertVerse</h1>
                 <nav className="flex flex-row gap-16 items-center font-(family-name:--font-inria-sans)">
                     <a href='/home'>Home</a>

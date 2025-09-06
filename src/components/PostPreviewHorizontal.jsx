@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowForward } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 
-const PostPreview = ({ imageLink, date, title, description }) => {
+const PostPreviewHorizontal = ({ imageLink, date, title, description }) => {
     return (
         <div className="flex flex-col w-[300px]">
             <img src={imageLink} className="w-[300px] h-[200px]"/>
@@ -18,4 +18,4 @@ const PostPreview = ({ imageLink, date, title, description }) => {
     );
 }
 
-export default PostPreview;
+export default PostPreviewHorizontal;

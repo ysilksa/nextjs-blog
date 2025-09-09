@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import NavBar from '@/components/NavBar';
 import PostPreviewVertical from '@/components/PostPreviewVertical';
-import PostPreviewHorizontal from '@/components/PostPreviewHorizontal';
+import { IconButton } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
 
 const PostsPage = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -11,6 +12,28 @@ const PostsPage = () => {
     return (
         <div>
             <NavBar header={true}/>
+
+            {/* button for adding posts */}
+            <IconButton
+                component="a"
+                href="/posts/create"
+                sx = {{
+                    position: 'fixed', 
+                    bottom: 50, 
+                    right: 32, 
+                    width: 64, 
+                    height: 64, 
+                    zIndex: 1000,
+                    color: '#FDFDFD',
+                    backgroundColor: '#828181',
+                    '&:hover': {
+                        color: '#FDFDFD',
+                        backgroundColor: '#BFBFB0'
+                    }
+                }}    
+            >
+                <AddIcon/>
+            </IconButton>
 
             {/* header and filter */}
             <section className="flex flex-col items-center gap-8 p-16">

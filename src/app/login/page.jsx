@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState } from 'react';
 import NavBar from '@/components/NavBar';
 import LoginFormInput from '@/components/LoginFormInput';
 import { Button } from '@mui/material';
@@ -30,7 +30,7 @@ const LoginPage = () => {
                     </Button>
                     <section className="flex gap-[16px] self-center">
                         <h2 className="text-[#828181]">Don't have an account?</h2>
-                        <a href="/create" className="text-[1.5rem] text-[#171717] font-(family-name:--font-inria-sans)">Create an account</a>
+                        <a href="/register" className="text-[1.5rem] text-[#171717] font-(family-name:--font-inria-sans)">Create an account</a>
                     </section>
                 </div>
             </section>

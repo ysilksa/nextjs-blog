@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextField } from '@mui/material';
 
-const LoginFormInput = ({ label }) => {
+const LoginFormInput = ({ label, state, value }) => {
     return (
         <div>
             <h2>{label}</h2>
@@ -14,6 +14,8 @@ const LoginFormInput = ({ label }) => {
                             fontFamily: 'var(--font-inter)'
                         },
                 }}
+                value={value}
+                onChange={state}
             />
             
         </div>

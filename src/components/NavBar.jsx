@@ -11,11 +11,12 @@ const NavBar = ({ header }) => {
                     <a href='/home'>Home</a>
                     <a href='/posts'>Posts</a>
                     <a href='/login'>Login</a>
+                    <a href='/profile'>Profile</a>
                 </nav>
             </div>
 
             {/* Search from material UI  */}
-            <div>
+            <div className="flex flex-row gap-[8px] h-[56px]">
                 <TextField 
                     label="Search"
                     variant="outlined"
